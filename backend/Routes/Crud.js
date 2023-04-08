@@ -28,7 +28,7 @@ async(req, res) => {
       })
       res.json({success: true});
    } catch(err){
-       console.log(err);
+    //    console.log(err);
        res.json({success: false});
    }
 }
@@ -58,7 +58,8 @@ async (req, res)=>{
     // when a user loggs in successfully, an authToken is created for it and stored in local storage. 
     return res.json({success: true, authToken: authToken});
    } catch(err) {
-    console.log(err);
+    // console.log(err);
+    res.json({success: false});
    }
 })
 
