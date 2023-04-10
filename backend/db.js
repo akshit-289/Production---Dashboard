@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 const mongoURI = "mongodb+srv://vepl:firstTry@cluster0.pdnuezr.mongodb.net/sample-db?retryWrites=true&w=majority";
+const BASE_URL = process.env.BASE_URL
 
 const mongoDb = async () => {
   await mongoose.connect(mongoURI, {useNewUrlParser:true}, async(err, result)=>{

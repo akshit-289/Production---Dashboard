@@ -17,7 +17,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${dashboard - backend - tvsz.onrender.com}/api/loginuser`,{
+    const response = await fetch("http://localhost:5000/api/loginuser",{
       method: 'POST',
       headers:{
         "content-Type":"application/json"
