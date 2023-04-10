@@ -5,16 +5,18 @@ const mongoDb = require('./db');
 const router = require('./Routes/Crud');
 const path = require('path');
 const BASE_URL = "https://incandescent-cranachan-b5714d.netlify.app/";
+const cors = require("cors");
 
 mongoDb();
-app.use((req, res, next)=>{
-    res.setHeader("Access-Control-Allow-Origin", BASE_URL);
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-})
+// app.use((req, res, next)=>{
+//     res.setHeader("Access-Control-Allow-Origin", BASE_URL);
+//     res.header(
+//       "Access-Control-Allow-Headers",
+//       "Origin, X-Requested-With, Content-Type, Accept"
+//     );
+//     next();
+// })
+app.use(cors());
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
