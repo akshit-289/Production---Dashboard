@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 // import 'react-phone-number-input/style.css'
 // import PhoneInput from 'react-phone-number-input'
+import BASE_URL from "../helper.js";
+
 function Signup() {
   const [credentials, setCredentials] = useState({
     name: "",
@@ -12,7 +14,7 @@ function Signup() {
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
        e.preventDefault();
-       const response = await fetch("http://localhost:5000/api/createuser",{
+       const response = await fetch(`${BASE_URL}/api/createuser`,{
         method:'POST',
         headers:{
             'Content-Type':'application/json'

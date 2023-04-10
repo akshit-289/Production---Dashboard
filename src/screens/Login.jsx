@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link,useNavigate } from "react-router-dom";
 import "../Dash.css";
+import BASE_URL from "../helper";
 
 function Login() {
   
@@ -17,7 +18,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/loginuser",{
+    const response = await fetch(`${BASE_URL}/api/loginuser`,{
       method: 'POST',
       headers:{
         "content-Type":"application/json"
