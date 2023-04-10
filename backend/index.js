@@ -4,7 +4,7 @@ const port = process.env.PORT || 5000
 const mongoDb = require('./db');
 const router = require('./Routes/Crud');
 const path = require('path');
-const BASE_URL = "https://64343ecba9fb4e54c79a3ce7--incandescent-cranachan-b5714d.netlify.app/";
+const BASE_URL = "https://incandescent-cranachan-b5714d.netlify.app/";
 
 mongoDb();
 app.use((req, res, next)=>{
