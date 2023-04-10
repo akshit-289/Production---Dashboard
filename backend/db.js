@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+mongoose.set('strictQuery', false);
 const mongoURI = "mongodb+srv://vepl:firstTry@cluster0.pdnuezr.mongodb.net/sample-db?retryWrites=true&w=majority";
 
 const mongoDb = async () => {
