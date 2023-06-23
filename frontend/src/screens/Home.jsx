@@ -21,7 +21,7 @@ function Home() {
                 <Box sx={{ display: "flex" }}>
                     <Sidenav />
                     <Box component="main" sx={{ flexGrow: 1, pl: 2, pt: 9, pr: 2, pb: 2,}}>
-                        <h1 className='mt-10'>RoyalUI Dashboard</h1>
+                        <h1 className='mt-10'>Home</h1>
                         <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                             <Grid container spacing={2}>
                                 <Grid item xs={3}>
