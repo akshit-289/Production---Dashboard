@@ -37,7 +37,7 @@ function Sidenav(props) {
               <ListItemIcon>
                 {<InboxIcon />}
               </ListItemIcon>
-              <ListItemText primary="Dashboard" />
+              <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
         <ListItem disablePadding onClick={()=>{navigate("/uielements")}}>
@@ -45,7 +45,7 @@ function Sidenav(props) {
               <ListItemIcon>
                 {<InboxIcon />}
               </ListItemIcon>
-              <ListItemText primary="UI Elements" />
+              <ListItemText primary="Contact" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding onClick={()=>{navigate("/formelements")}}>
